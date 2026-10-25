@@ -1,0 +1,12 @@
+{
+  "name": "thehotfarmer.com",
+  "private": true,
+  "description": "Static landing site for thehotfarmer.com — Cloudflare Workers static assets",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

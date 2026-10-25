@@ -1,0 +1,17 @@
+{
+  // Cloudflare Workers with static assets. Deploy: `npx wrangler deploy`
+  // Auto-deploy from GitHub: Cloudflare dashboard → Workers & Pages → Create → Import a repository (Workers Builds).
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "thehotfarmer",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  },
+  "routes": [
+    { "pattern": "thehotfarmer.com", "custom_domain": true },
+    { "pattern": "www.thehotfarmer.com", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}
