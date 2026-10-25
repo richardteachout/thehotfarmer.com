@@ -4,7 +4,7 @@ Static landing site: age gate → link page out to OnlyFans, X and Reddit. Nothi
 
 ## Layout
 - `public/` — the site. Plain HTML/CSS/JS, no build step.
-- `public/_headers`, `public/_redirects` — Cloudflare headers and www→apex redirect.
+- `public/_headers` — Cloudflare security and cache headers. (www→apex: add a Redirect Rule in the Cloudflare dashboard; Workers `_redirects` only allows relative targets.)
 - `wrangler.jsonc` — Cloudflare Workers (static assets) config with custom domains.
 
 ## Deploy
